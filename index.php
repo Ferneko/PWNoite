@@ -68,10 +68,12 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a>Home</a>
+                        <a href="./array.php">
+                            Home
+                        </a>
                     </li>
-                    <li> <a>Contato</a></li>
-                    <li> <a>Usuários</a></li>
+                    <li>  <a href="./funcao.php">Contato</a></li>
+                    <li>  <a href="./sintaxe.php">Usuários</a></li>
                 </ul>
             </nav>
             
