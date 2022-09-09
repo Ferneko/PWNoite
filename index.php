@@ -1,97 +1,89 @@
-<?php 
-    // Comentarios em PHP - Linha
-    /*
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    */
-    //echo "Hello world - Meu nome é Fernando"; 
-    $idade = 32;
-    $nome = "Fernando";
-    $Altura = 1.77;
-    $solteiro = true;
-    //$solteiro = 1;
-    //echo $solteiro;
-    //echo 10 < 12;
-    CONST IDADE = 10;
-    echo IDADE;
-    if(10 > 12)
-    {
-        //echo "Mentira";
-    }
-    else
-    {
-        //echo "10 não é maior que 12";
-    }
-/*
-    $nota1 = 6;
-    if($nota1 >= 6)
-    {
-        echo "Aprovado";
-    }
-     else if($nota1 < 6 && $nota1 >= 2)
-    {
-        echo "Ainda tem chance";
-    }
-*/
-    // Faça um If que calcule a média e escreva na tela
-    // se foi aprovado ou não
-    $nota1 = 8;
-    $nota2 = 10;
-    $media = $nota1+$nota2;
-    //$media = $media/2;
-    $media /= 2;
-    //$soma += 10;
-    //$soma = $soma + 10;
-    //$mult *= 3;
-    //$mult = $mult * 3;
-    //$sub -= 5;
-    //$sub = $sub - 5;
-
-    if($media >= 6){
-        echo "Aprovado";
-    }else{
-        echo "Reprovado";
-    }
-   // > Maior
-   // < Menor
-   // <= Menor igual que
-   // >= Maior Igual que
-   // == Mesmo valor
-   //=== Mesmo tipo e Mesmo valor
-   
-    // && AND
-    // || OR
-    // ! Negação 
-
-    //if(!10>12){} ! inverte o resultado do teste logico
-
-    // % Resto da divisão
-
-    //Concatenação
-    $nome = "teste";
-    echo "<br> <br> Fer " . $nome . " nando "."<br>";
-
-    //Loop em PHP
-    $contadora = 0;
-    do{
-        // Código a ser repetido
-        $contadora ++;
-    }while($contadora < 10);
-
-    $cont = 0;
-    while($cont < 10){
-        //executa os codigos
-        $cont++;
-    }
-
-    for($i = 0; $i < 10; $i++)
-    {
-        //Executa os codigos
-        if ( $i % 2 == 0 )
-        {
-            echo "<p> ". $i ." é par</p>";
-        }else{
-            echo "<p> ". $i . " é impar</p>";
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web</title>
+    <style>
+        body, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: Arial;
         }
-    }
-    
-?>
+       
+        a{
+            text-decoration: none;
+        }
+       
+        #container {
+            display: grid;
+            grid-template-rows: 100px auto ;
+            grid-template-areas:
+                'cabecalho'
+                'conteudo'
+        }
+
+        #cabecalho{
+            grid-area: cabecalho;
+            background: #1d1e20;
+            color:white;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px ;
+        }
+
+        #conteudo {
+            grid-area: conteudo;
+            background-color: #fff;
+        }
+        .menu{
+            display: flex;
+        }
+
+        .menu li{
+            margin-left: 10px;
+        }
+
+        .menu li a{
+            display: block;
+            padding: 10px;
+            
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="cabecalho">
+            <div class="logo">
+                <img src="./img/logo.png" width="50" height="50">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a>Home</a>
+                    </li>
+                    <li> <a>Contato</a></li>
+                    <li> <a>Usuários</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+      
+        <main id="conteudo">
+           
+           <h1>Página Inicial do meu site</h1>
+
+        </main>
+      
+    </div>
+</body>
+
+</html>
