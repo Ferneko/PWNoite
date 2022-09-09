@@ -74,7 +74,8 @@
                             Home
                         </a>
                     </li>
-                    <li>  <a href="./funcao.php">Contato</a></li>
+                    <li>  <a href="./funcao1.php">Contato</a></li>
+                    <li>  <a href="./funcao.php">Funções</a></li>
                     <li>  <a href="./sintaxe.php">Usuários</a></li>
                 </ul>
             </nav>
