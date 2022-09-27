@@ -13,11 +13,9 @@
             list-style: none;
             font-family: Arial;
         }
-       
         a{
             text-decoration: none;
         }
-       
         #container {
             display: grid;
             grid-template-rows: 100px auto ;
@@ -25,7 +23,6 @@
                 'cabecalho'
                 'conteudo'
         }
-
         #cabecalho{
             grid-area: cabecalho;
             background: #1d1e20;
@@ -36,7 +33,6 @@
             align-items: center;
             padding: 20px ;
         }
-
         #conteudo {
             grid-area: conteudo;
             background-color: #fff;
@@ -44,18 +40,15 @@
         .menu{
             display: flex;
         }
-
         .menu li{
             margin-left: 10px;
         }
-
         .menu li a{
             display: block;
             padding: 10px;
             
             cursor: pointer;
         }
-       
     </style>
 </head>
 
